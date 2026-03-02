@@ -43,9 +43,11 @@ The project is built entirely using AWS managed services — no servers required
 ## 📊 Architecture Flow Diagram
 
 ```
-<img width="1425" height="407" alt="image" src="https://github.com/user-attachments/assets/5bf5a721-85c8-49d6-b865-1ffb0f8e6a13" />
-
----
+Client → S3 Bucket → Lambda → CloudWatch
+                          ↓
+                    API Gateway (GET)
+                          ↓
+                       Client
 
 
 ## 🌐 API Endpoint
